@@ -3,7 +3,11 @@
     "allow": [
       "WebFetch(domain:ollama.com)",
       "WebFetch(domain:qwenlm.github.io)",
-      "WebFetch(domain:arxiv.org)"
+      "WebFetch(domain:arxiv.org)",
+      "Bash(python3 -c ' *)",
+      "Bash(python3 -c \"import torch; print\\('CUDA available:', torch.cuda.is_available\\(\\)\\); print\\('GPU:', torch.cuda.get_device_name\\(0\\) if torch.cuda.is_available\\(\\) else 'N/A'\\); print\\('VRAM:', round\\(torch.cuda.get_device_properties\\(0\\).total_memory/1e9, 1\\), 'GB' if torch.cuda.is_available\\(\\) else ''\\)\")",
+      "Bash(/home/haller/.conda/envs/hf-agents-course/bin/pip show *)",
+      "Bash(/home/haller/.conda/envs/hf-agents-course/bin/pip list *)"
     ]
   }
 }

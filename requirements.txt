@@ -1,0 +1,9 @@
+smolagents[litellm]
+numpy
+ipykernel
+ipywidgets
+opentelemetry-sdk
+opentelemetry-exporter-otlp
+openinference-instrumentation-smolagents
+langfuse
+langchain-community
